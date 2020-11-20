@@ -9,7 +9,7 @@ br-sao.pvdata.host
 bg-sof.pvdata.host
 ca-mon.pvdata.host
 ca-tor.pvdata.host
-ca-tor2.pvdata.hos
+ca-tor2.pvdata.host
 ca-van.pvdata.host
 cl-san.pvdata.host
 co-bog.pvdata.host
@@ -33,9 +33,9 @@ ie-dub.pvdata.host
 im-bal.pvdata.host
 il-tel.pvdata.host
 it-mil.pvdata.host
-it-mil2.pvdata.hos
+it-mil2.pvdata.host
 jp-tok.pvdata.host
-jp-tok2.pvdata.hos
+jp-tok2.pvdata.host
 lv-rig.pvdata.host
 lt-sia.pvdata.host
 lu-ste.pvdata.host
@@ -65,7 +65,7 @@ se-got.pvdata.host
 se-kis.pvdata.host
 se-sto.pvdata.host
 ch-zur.pvdata.host
-ch-zur2.pvdata.hos
+ch-zur2.pvdata.host
 tw-tai.pvdata.host
 th-ban.pvdata.host
 tr-ist.pvdata.host
@@ -77,14 +77,14 @@ ae-dub.pvdata.host
 us-atl.pvdata.host
 us-buf.pvdata.host
 us-chi.pvdata.host
-us-chi2.pvdata.hos
+us-chi2.pvdata.host
 us-dal.pvdata.host
 us-las.pvdata.host
 us-los.pvdata.host
 us-mia.pvdata.host
 us-jer.pvdata.host
 us-nyc.pvdata.host
-us-nyc2.pvdata.hos
-us-nyc4.pvdata.hos
+us-nyc2.pvdata.host
+us-nyc4.pvdata.host
 us-pho.pvdata.host
 vn-hoc.pvdata.host
