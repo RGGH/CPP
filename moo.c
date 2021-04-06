@@ -21,4 +21,3 @@ void count_down_from(int num)
     if (num < 0) return;
     else count_down_from(num);
 }
-
