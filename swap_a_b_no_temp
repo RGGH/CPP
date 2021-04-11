@@ -1,0 +1,16 @@
+#include<time.h>
+#include<stdlib.h>
+#include<stdio.h>
+
+
+int main()
+{
+    int a = 12;
+    int b = 5;
+
+    a = (a+b); //17
+    b = (a-b); //12
+    a = (a-b); //5
+
+    printf("a is %d and b is %d",a,b);
+}
