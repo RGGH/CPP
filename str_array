@@ -1,0 +1,26 @@
+//chararr
+
+#include<stdio.h>
+
+int main()
+{
+    char *arch[4] = {"not quite","nearly","not close","almost"};
+
+    int i = -1;
+
+    while (i !=0)
+    {
+        printf("%s","enter a choice 1-5 \n");
+        scanf("%d",&i);
+        //printf("%d",i);
+        if (i != 5)
+        {
+            printf("%d, %s, try again \n", i, arch[i]);
+        }
+        else
+        {
+            printf("%s"," Yes! - you guessed right\n");
+            return 0;
+        }
+    }
+}
