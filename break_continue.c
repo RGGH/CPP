@@ -12,6 +12,7 @@ int main()
         a+=1;
         if(a==9){
         break;
+        //continue;    
         }
         printf("%d ",a);
     }
