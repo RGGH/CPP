@@ -4,13 +4,6 @@ char brd[10] = {'o','-','-','-','-','-','-','-','-','-'};
 int played = 0;
 int result = 0;
 
-void boardSetup(){
-    int i=0;  
-    printf("%c | %c | %c\n",brd[i+1],brd[i+2],brd[i+3]);  
-    printf("%c | %c | %c\n",brd[i+4],brd[i+5],brd[i+6]); 
-    printf("%c | %c | %c\n",brd[i+7],brd[i+8],brd[i+9]);            
-    }
-
 void boardRefresh(){
     int i=0; 
     printf("%c | %c | %c\n",brd[i+1],brd[i+2],brd[i+3]);  
@@ -33,30 +26,53 @@ void play0(){
     brd[num] = '0';  
 }
 
-void checkWin(){
 
-    char w='X';
+void checkWin(char w){
+
     // check 3 horiz
     if (brd[1]==w && brd[2]==w && brd[3]==w) { 
-        printf("%s","player X wins");
+        printf("\n%c wins\n\n", w);
         result=1;
         }
     if (brd[4]==w && brd[5]==w && brd[6]==w) { 
-        printf("%s","player X wins");
+        printf("\n%c wins\n\n", w);
         result=1;
         }
     if (brd[7]==w && brd[8]==w && brd[9]==w) { 
-        printf("%s","player X wins\n");
+        printf("\n%c wins\n\n",w);
         result=1;
         }
-    // check 3 vert 
-    // check diagonal each way
 
+    // check 3 vert
+        if (brd[1]==w && brd[4]==w && brd[7]==w) { 
+        printf("\n%c wins\n\n", w);
+        result=1;
+        }
+    if (brd[2]==w && brd[5]==w && brd[8]==w) { 
+        printf("\n%c wins\n\n", w);
+        result=1;
+        }
+    if (brd[3]==w && brd[6]==w && brd[9]==w) { 
+        printf("\n%c wins\n\n",w);
+        result=1;
+        } 
+
+    // check diagonal each way
+    if (brd[1]==w && brd[5]==w && brd[9]==w) { 
+        printf("\n%c wins\n\n", w);
+        result=1;
+        }
+    if (brd[3]==w && brd[5]==w && brd[7]==w) { 
+        printf("\n%c wins\n\n",w);
+        result=1;
+        } 
 }
 
 int main(){
     
-    boardSetup();
+    boardRefresh();
+
+    char w;
 
     /* start game */
     while (result ==0 && played < 9){
@@ -65,7 +81,8 @@ int main(){
     playX();
     played ++;
     boardRefresh();
-    checkWin();
+    w = 'X';
+    checkWin(w);
     if (result == 1){
         break;
     }
@@ -74,12 +91,11 @@ int main(){
     play0();
     played ++;
     boardRefresh();
-    checkWin();
+    w = '0';
+    checkWin(w);
     if (result == 1){
         break;
     }
-
-
-    }}
+}}
 
 
