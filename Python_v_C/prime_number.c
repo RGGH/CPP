@@ -25,10 +25,10 @@ int calprime(int n){
 
         for (mj=2;mj<=(n-1);mj++)
         {
-            if (n % mj == 0)
-                return 0; // if it's not a prime
+            if (n % mj == 0) // iterate through all possible, see if modulus gives a zero //
+                return 0; 
         }
         if (mj == n)
-            return 1;
+            return 1; // if for loop doesn't give a true, it's a prime!
             
 }
