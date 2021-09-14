@@ -1,6 +1,14 @@
 #include<stdio.h>
 
+/* make a pyramid
+    1 
+   2 3 
+  4 5 6 
+ 7 8 9 10 
+*/
+
 #define SIZE 4
+
 
 void makerow(int endrowval, int row);
 
