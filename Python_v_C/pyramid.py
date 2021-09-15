@@ -12,10 +12,10 @@ spaces = 0
 
 
 def pr_row(prev, cols):
-    pstr=""
+    pstr=" "
     spaces = ph - cols
     for i in range(0, cols):
-        pstr += (str(prev+i))
+        pstr += (str(prev+i) + " ")
     spaces = str(spaces*" ")
     print(spaces + " " + pstr)
   
